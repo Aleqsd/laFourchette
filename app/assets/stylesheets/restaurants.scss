@@ -23,7 +23,6 @@ $gray-dark: #999;
   padding: 20px;
 
   img {
-    @include box-shadow(4px 4px 5px rgba(0, 0, 0, .3));
     max-width: 100%;
   }
 

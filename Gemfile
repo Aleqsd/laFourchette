@@ -20,6 +20,8 @@ gem 'simple_form'
 gem 'cloudinary'
 gem 'attachinary', github: 'assembler/attachinary'
 gem 'dotenv-rails'
+gem 'devise', '~> 4.2'
+gem 'devise-i18n'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

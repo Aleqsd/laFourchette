@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :restaurants, only: [:show, :new, :create]
+
+  # la liste des restaurants sera la page d'accueil :
+  root to: "restaurants#index"
 end

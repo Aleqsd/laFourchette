@@ -9,8 +9,11 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.new
   end
 
+  before_action :authenticate_user!, except: [:index, :show]
+
   def create
     @restaurant = Restaurant.new(restaurant_params)
+    @restaurant.user = current_user
 
     if @restaurant.valid?
       @restaurant.save!

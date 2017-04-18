@@ -9,11 +9,18 @@ class CommentsController < ApplicationController
 
     if @new_comment.valid?
       @new_comment.save!
-      redirect_to restaurant_path(@restaurant)
+      respond_to do |format|
+        format.html { redirect_to restaurant_path(@restaurant) }
+        format.js # <- renvoie create.js.erb
+      end
     else
-      render "restaurants/show"
+      respond_to do |format|
+        format.html { render "restaurants/show" }
+        format.js # <- renvoie create.js.erb
+      end
     end
   end
+
 
   private
   def comment_params

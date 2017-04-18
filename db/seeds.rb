@@ -1,3 +1,5 @@
+Comment.destroy_all
+
 Restaurant.destroy_all
 
 User.destroy_all
@@ -6,7 +8,10 @@ def open_photo(name)
   File.open(Rails.root.join("db", "restaurant-images", name))
 end
 
-  user = User.create!(email: "colin@darie.eu", password: "password")
+user = User.create!(
+  email: "colin@darie.eu",
+  username: "colinux",
+  password: "password")
 
   # ajouter cet user à chaque restaurant créé :
   resto = Restaurant.create!(
@@ -15,8 +20,6 @@ end
     city: "Aix-en-Provence",
     photo: open_photo("aux-petits-oignons.jpg")
   )
-
-
 
   resto = Restaurant.create!(name: "Aux Petits Oignons",
     city: "Aix-en-Provence", photo: open_photo("aux-petits-oignons.jpg"), user: user)

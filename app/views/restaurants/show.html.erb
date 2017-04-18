@@ -16,7 +16,9 @@
 
 <div class="comments">
   <% if @restaurant.comments.any? %>
-    <h2>Commentaires:</h2>
+  <h2>
+    <%= t("restaurants.comments_header", count: @restaurant.comments.count) %>
+  </h2>
 
     <% @restaurant.comments.each do |comment| %>
       <%= render partial: "comments/show", locals: { comment: comment } %>

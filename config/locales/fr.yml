@@ -1,0 +1,26 @@
+fr: # la clé principale correspond à la langue traduite
+  activerecord:
+    models:
+      comment:
+        one: Commentaire
+        other: Commentaires
+
+    attributes:
+      comment:
+        text: Texte
+
+      restaurant:
+        name: Nom
+        city: Ville
+        photo: Photo
+        
+  restaurants:
+    form:
+      title: "Ajout d'un restaurant"
+      submit: "Créer le restaurant"
+
+restaurants:
+  comments_header:
+    zero: "Il n'y a pas de commentaire."
+    one: "Il y a un premier commentaire."
+    other: "Il y a %{count} commentaires."

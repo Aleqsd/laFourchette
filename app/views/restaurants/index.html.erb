@@ -1,6 +1,10 @@
 <div class="restaurants">
   <h1>Tous nos restaurants</h1>
-
+  <div class="slicktest">
+    <div><%= cl_image_tag("https://s-media-cache-ak0.pinimg.com/736x/1d/39/91/1d3991970310ac29b042f3fa6f1b68c5.jpg", width: 300, height: 200, crop: :fill, class: "picture") %></div>
+    <div><%= cl_image_tag("https://s-media-cache-ak0.pinimg.com/736x/1d/39/91/1d3991970310ac29b042f3fa6f1b68c5.jpg", width: 300, height: 200, crop: :fill, class: "picture") %></div>
+    <div><%= cl_image_tag("https://s-media-cache-ak0.pinimg.com/736x/1d/39/91/1d3991970310ac29b042f3fa6f1b68c5.jpg", width: 300, height: 200, crop: :fill, class: "picture") %></div>
+  </div>
   <%- @restaurants.each do |restaurant| -%>
     <section class="row restaurant">
       <div class="col-sm-4">

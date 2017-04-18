@@ -18,4 +18,5 @@
 //= require jquery.fileupload
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
-//= require_tree .
+//= require jquery.slick
+//= require restaurants

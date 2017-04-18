@@ -23,6 +23,7 @@ gem 'dotenv-rails'
 gem 'devise', '~> 4.2'
 gem 'rails-i18n'
 gem 'devise-i18n'
+gem "jquery-slick-rails"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

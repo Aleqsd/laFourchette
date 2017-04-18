@@ -9,6 +9,7 @@
       <div class="col-sm-8">
         <h2><%= restaurant.name %></h2>
         <p><%= restaurant.city %></p>
+        <h2><%= link_to(restaurant.name, restaurant_path(restaurant)) %></h2>
       </div>
     </section>
   <% end %>

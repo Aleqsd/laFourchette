@@ -13,14 +13,6 @@ user = User.create!(
   username: "colinux",
   password: "password")
 
-  # ajouter cet user à chaque restaurant créé :
-  resto = Restaurant.create!(
-    name: "Aux Petits Oignons",
-    user: user,
-    city: "Aix-en-Provence",
-    photo: open_photo("aux-petits-oignons.jpg")
-  )
-
   resto = Restaurant.create!(name: "Aux Petits Oignons",
     city: "Aix-en-Provence", photo: open_photo("aux-petits-oignons.jpg"), user: user)
 

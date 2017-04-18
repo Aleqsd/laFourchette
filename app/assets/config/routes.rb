@@ -1,0 +1,1 @@
+mount Attachinary::Engine => "/attachinary"
